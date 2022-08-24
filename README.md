@@ -1,90 +1,257 @@
---ITEMS--
-- The Pick/Axe now has more durability and chops/mines things faster (From 1.33 to 1.66)
-- The Pick/Axe is now also a shovel, hammer, pitchfork, and razor
-- The Thulecite medallions recipe has been cut in half
-- The lazy forager's durability has been increased (to 1200), and its pickup speed and range has been tripled/doubled
-- Lazy forager's durability can be refilled with thulecite fragments (300 per fragment) (configurable)
-- Made the bone helm repairable with nightmare fuel (150 per) (configurable)
-- The nightmare amulet only takes 1 purple gem now to follow etiquette with all the other amulets
-- Scalemail now gives 85% damage reduction and has 1800 durability
-- The Summer Frest now cuases you to take less overheat damage (configurable)
-- The summer frest now has 12 days of durability
-- The Breezy Vest's recipe has been reduced, and its insulation has been doubled
-- The Dapper Vest has increased durability
-- Rain coat now has 4 inventory slots and acts like a backpack
-- Breezy vest now has 4 inventory slots
-- Puffy vest now has 4 inventory slots
-- Summer frest now has 4 inventory slots
-- Snurtle Shell Armor now has 4 inventory slots and double the durability (configurable)
-- Buffed the recipe for darts (configurable)
-- Umbrella waterproofness has been nerfed to 70% (configurable)
-- Cookie cutter hat waterproofness has been buffed to 50% (configurable)
-- Rain hat waterproofness has been buffed to 85% (configurable)
-- Night armor now has 666 durability
-- Tillweed Salve now costs less and heals 30 over a minute
-- Strident trident can now be refilled with bone shards (refills 25 uses) (configurable)
-- Fire staff no longer costs nightmare fuel, and can be crafted by a prestihatitator
-- The Ice Cube no longer takes transistors to craft
-- The Brush no longer takes a walrus tusk to craft
-- The War Saddle now does 25 bonus damage instead of 16
-- Salted foods should now have 1.5x health and sanity
-- The Melon Hat now takes 6 days to perish instead of 3
-- The Hibearnation Vest now has 50% armor absorption (taking damage reduces its durability)
-- Dapper Vest now gives sanity when you take damage, and removes sanity when you heal
-- The Floral Shirt now gives a 20% speed boost
-- Fire staff now deals 20 damage on use as well
-- Fire darts and sleep darts now deal 50 damage on use as well
+List of changes:
+# HANDHELD
+- Pick/Axe:
+	- Chops/mines things faster (From 1.33 to 1.66)
+	- Also a shovel, hammer, pitchfork, and razor
 
---STRUCTURES--
-- Night light's now only take 3 nightmare fuel to max out the flame, have a much larger light radius, cost 4 gold less to make, last longer, and have more durability
-- Houndius Shootius' have an increased rate of fire and regen
-- Potted Ferns now have a +1.67 sanity per minute aura (configurable)
-- Potted Succulents now have a +3.33 sanity per minute aura (configurable)
-- Siesta lean-to's hunger rate is now 1 per second
-- The salt lick now costs 4 salt instead of 4 nitre, but has double durability
-- Tooth traps have double durability but cost 3x the hound's teeth
-- Added recipe 10 hound's teeth to 1 bone shard
-- All Walls are buffed (configuration options)
-- Scaled chests now have 16 slots and have the same claustrophobia radius as a chest
-- Minotaur chests now have 25 slots and are craftable
+- Brush:
+	- No longer costs a walrus tusk (from 1 to 0)
 
---CHARACTERS--
-- Buff Maxwell shadow duelists, and Maxwell sanity loss for shadow minions from 35% -> 15%
-- Wortox soul healing reduction per player was increased to 3 (configurable)
-- Willow's handheld Bernie no longer loses durability while held
-- Bernie now heals 1 health per second when big, and 1 health every 2 seconds when small (configurable)
-- Willow now does 2x damage with fire-based weapons and inflicts a stacking debuff on enemies that makes them take more fire damage (configurable)
-- Winona is now 2x as fast at picking
-- Winona has a reduced penalty when carrying heavy items (minimum speed is 0.75)
-- Winona now has an extra 20% hunger loss but +25 max health and hunger (configurable)
-- Winona now gains 15 sanity when resisting a charlie hit and 10 sanity when constructing a building (configurable)
-- Items made by Winona have 10% more max durability (configurable)
+- Umbrella:
+	- 70% waterproofness (from 90%)
 
---MOBS--
-- Rock lobsters have much lower health (average 1800 instead of 3000) and have increased drops (configurable)
-- The Pet Lavae now can't die unless if it starves, and can no longer set things on fire. In exchange, it has a negative sanity aura that scales from 0 to -100 per minute based on its hunger
-- Treeguards now do 50 damage to players and enemies instead of 50 to players, and 150 to enemies
-- Beefalo do not lose domestication from starvation anymore when fully tamed
-- Birch monsters drop 3 living logs and 24 birch nuts now
-- 40% the drop chance of spider hats, but doubled their durability
-- Leifs (Treeguards) Now drop between 4-8 living logs based on their size and 1-3 leafy meat
-- Bees now have a 25% stinger droprate and 25% honey droprate
-- Spitters now drop phlegm along with their other drops
-- Shattered spiders now have an attack rate of 2.5 and 25% more agro range, but also drop 1 moonglass
-- Mutated penguins now drop between 0-2 monster meat and 0-6 ice
-- Crab King no longer chain freezes but his freeze attack does damage that scales with blue gems slotted
+- Strident Trident:
+	- Repaired with bone shards (refills 25 uses) (configurable)
 
---MISC--
-- Removed Spooky Bats from chopping trees (configurable)
-- Waterballoons now affect all mobs
-- Waterballoons now aggro enemies
-- Doubled the time it takes for stone fruit to grow
+- Fire Staff:
+	- Deals 20 damage instead of 0
+	- No longer costs nightmare fuel (from 2)
+	- Can be crafted by prestihatitator instead of shadow manipulator
 
---TURF--
-- Scaled flooring has a 40% speed bonus and gives 160 seconds of winter insulation (configurable)
-- Wooden flooring has a 20% speed bonus (configurable)
-- Carpeted flooring restores +1.33 sanity per minute and has 20% waterproofness (configurable)
-- Checkered flooring restores +3.33 sanity per minute and stuff is very slightly less likely to ignite on it (configurable)
-- Scaled flooring now gives resistance to smoldering for structures placed on it
+- Darts:
+	- Can be configured to craft x amount while only using 1 feather
+	- Fire Dart:
+		- Deals 50 damage instead of 0
+	- Sleep Dart:
+		- Deals 50 damage instead of 0
+
+# BODY
+- Scalemail:
+	- 85% absorption (from 70%)
+	- 1800 durability (from 945) (configurable)
+
+- Night Armor:
+	- 666 durability (from 525)
+
+- Bone Helm:
+	- Repaired with nightmare fuel (refills 150 durability) (configurable)
+
+- Snurtle Shell Armor:
+	- 1500 durability (from 735) (configurable)
+	- 4 inventory slots (from 0)
+
+- Summer Frest:
+	- Take less overheat damage (configurable)
+	- 12 days of durability (from 8)
+	- 4 inventory slots (from 0)
+
+- Breezy Vest:
+	- Costs 4 less silk
+	- 120 winter insulation (from 60)
+	- 4 inventory slots (from 0)
+
+- Puffy Vest:
+	- 4 inventory slots (from 0)
+
+- Dapper Vest:
+	- 15 days of durability (from 10)
+	- Grants 0.4 sanity per damage taken
+	- Removes 0.4 sanity per health healed
+
+- Rain Coat:
+	- 4 inventory slots (from 0)
+
+- Floral Shirt:
+	- 20% speed boost (from 0%)
+
+- Hibearnation Vest:
+	- 50% absorption (from 0%)
+	- Taking damage reduces its durability
+
+- The Lazy Forager:
+	- 1200 durability (from 225)
+	- Pickup speed tripled (from 3 to 8 items/second)
+	- Range tripled (from 4 to 12)
+	- Repaired with thulecite fragments (refills 300 uses) (configurable)
+
+- Nightmare Amulet:
+	- Costs 1 less purple gem (from 2 to 1)
+
+# HAT
+- Cookie Cutter Cap:
+	- 50% waterproofness (from 35%) (configurable)
+
+- Rain Hat:
+	- 85% waterproofness (from 70%) (configurable)
+
+- Fashion Melon:
+	- 6 days of durability (from 3)
+
+- Spiderhat:
+	- 4 minutes of durability (from 2)
+
+- Ice Cube:
+	- No longer costs transistors (from 2 to 0)
+
+# STRUCTURES
+- Night Light:
+	- Costs 4 less gold (from 8)
+	- 16 durability (from 4)
+	- Much larger light radius
+	- Lasts 3 days (from 1)
+
+- Potted Fern:
+	- +1.67 sanity per minute aura (from 0) (configurable)
+
+- Potted Succulent:
+	- +3.33 sanity per minute aura (from 0) (configurable)
+
+- Siesta Lean-To:
+	- 1 hunger per second (from 0.33)
+
+- Salt Lick:
+	- Costs 4 salt (instead of 4 nitre)
+	- 480 durability (from 240)
+
+- Walls:
+	- More durability (configurable)
+
+- Scaled Chest:
+	- 16 slots (from 12)
+	- 1 claustrophobia range (from 1.5)
+
+- Ornate Chest:
+	- 25 slots (from 9)
+	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 400 stingers
+
+- Houndius Shootius:
+	- 24 health regeneration (from 12 to 24)
+	- 20 range (from 15)
+	- Tripled rate of fire (from 3 seconds to 1 second)
+
+- Tooth Trap:
+	- Costs 3 hounds teeth (from 1)
+	- 20 uses (from 10)
+
+# TURF
+- Scaled Flooring:
+	- +10% speed (from 0%) (configurable)
+	- 320 seconds of winter insulation (from 0) (configurable)
+	- Resistance to smoldering for structures placed on it (configurable)
+	- Resistance to wildfires for structures placed on it (configurable)
+
+- Wooden Flooring:
+	- +20% speed (from 0%) (configurable)
+
+- Carpeted Flooring:
+	- +1.33 sanity per minute (from 0) (configurable)
+	- +20% rain resistance (from 0%) (configurable)
+
+- Checkered Flooring:
+	- +3.33 sanity per minute (from 0) (configurable)
+	- +20% heat resistance for structures placed on it (from 0%)
+
+# CHARACTER
+- Maxwell:
+	- Starts with night armor
+	- Workers:
+		- Cost 15% sanity (from 20%)
+	- Duelist:
+		- Cost 25% sanity (from 35%)
+		- 10 speed (from 6)
+		- 68 damage (from 40)
+		- 250 health (from 75)
+		- 1 second before healing (from 2)
+
+- Wortox:
+	- 3 heal reduction per player (from 1) (configurable)
+
+- Willow:
+	- 2x damage multiplier with fire-based weapons (from 1x) (configurable)
+	- Inflicts stacking debuff making enemies take more fire damage (configurable)
+	- Bernie:
+		- No durability loss while held (used to lose durability)
+		- 1 health per second if big, 1 health per 2 seconds if small (from 0) (configurable)
+
+- Winona:
+	- +25 max health and hunger (configurable)
+	- 2x faster at picking (from 1x)
+	- Reduced penalty when carrying heavy items (minimum speed is 0.75)
+	- +20% hunger loss (configurable)
+	- 15 sanity gain from resisting charlie hit (from 0) (configurable)
+	- 10 sanity gain from constructing structures (from 0) (configurable)
+	- +10% max durability for items made by Winona (configurable)
+
+# MOBS
+- Rock Lobster:
+	- 1800 health (from 3000)
+	- Drop 8 rocks, 8 flint, and 2 meat (from 2 rocks, 2 flint, and 1 meat)
+
+- Pet Lavae:
+	- Immortal unless it starves
+	- Starves over the course of 4 days (from 2)
+	- No longer sets things on fire
+	- Negative sanity aura scaling from 0 to -100 per minute depending on hunger
+
+- Beefalo:
+	- Do not lose domestication from starvation when fully tamed
+
+- Treeguards (Leifs):
+	- 100 damage to enemies (from 150)
+	- Drop 4-8 living logs depending on size (from 6 always)
+	- Drop 1-3 leafy meat depending on size (from 1 monster meat always)
+
+- Poison Birchnut Treeguards:
+	- Drop 3 living logs and 24 birch nuts (from 1 living log and 2 birch nuts)
+
+- Spider Queen:
+	- 40% drop chance for spiderhat (from 100%)
+
+- Bees (Killer And Normal):
+	- 25% stinger droprate (from 83.33%)
+	- 25% honey droprate (from 16.66%)
+
+- Spitter:
+	- Drop 1 phlegm
+
+- Shattered Spider:
+	- Drop 1 moonglass
+	- 2.5 attack rate (from 3)
+	- +25% aggro range
+
+- Moonrock Pengull:
+	- Drop 0-2 monster meat and 0-6 ice (from 1 monster meat and 1 ice)
+
+- Crab King:
+	- Can't permenantly freeze (chain freeze) anymore
+	- Freeze attack does damage (5 piercing per blue gem slotted)
+
+# OTHER
+- Tillweed Salve:
+	- 30 healed over 1 minute (from 20)
+	- Costs 3 tillweed, 2 petals, and 1 charcoal (from 4 tillweed, 4 petals, and 1 charcoal)
+
+- War Saddle:
+	- 25 bonus damage (from 16)
+
+- Hounds Teeth:
+	- New recipe: 10 teeth -> 1 bone shard
+
+- Salt Crystals:
+	- 1.5x health when used on food (from 1x)
+	- 1.5x sanity when used on food (from 1x)
+
+- Spooky Bats:
+	- Removed when chopping trees (configurable)
+
+- Water Balloon:
+	- Affects all mobs (used to not affect water resistant mobs)
+	- Aggros enemies
+
+- Stone Fruit Bush:
+	- Stone fruit takes double the time to grow (from 2 days to 4 days)
+
+- Thulecite Medallion:
+	- Costs 1 thulecite and 1 nightmare fuel (from 2 thulecite and 2 nightmare fuel)
 
 Make sure to check out the Food Rebalancing mod by my friend Gang of Wolves: https://steamcommunity.com/sharedfiles/filedetails/?id=1755762571
