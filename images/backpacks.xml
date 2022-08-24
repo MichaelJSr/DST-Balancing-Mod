@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Atlas>
+    <Texture filename="backpacks.tex"/>
+    <Elements>
+        <Element name="1x1.tex" u1="0.500489" u2="0.749756" v1="0.250244" v2="0.499511"/>
+        <Element name="1x2.tex" u1="0.500489" u2="0.749756" v1="0" v2="0.249267"/>
+        <Element name="2x2.tex" u1="0.750733" u2="1" v1="0.250244" v2="0.499511"/>
+        <Element name="3x3.tex" u1="0" u2="0.499511" v1="0.500489" v2="1"/>
+        <Element name="4x4.tex" u1="0" u2="0.499511" v1="0" v2="0.499511"/>
+        <Element name="5x5.tex" u1="0.500489" u2="1" v1="0.500489" v2="1"/>
+    </Elements>
+    <StraightAlpha>false</StraightAlpha>
+</Atlas>
+
