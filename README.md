@@ -1,4 +1,3 @@
-This is a balancing of items;
 --ITEMS--
 - The Pick/Axe now has more durability and chops/mines things faster (From 1.33 to 1.66)
 - The Pick/Axe is now also a shovel, hammer, pitchfork, and razor
