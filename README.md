@@ -67,10 +67,10 @@ List of changes:
 	- Taking damage reduces its durability
 
 - The Lazy Forager:
-	- 1200 durability (from 225)
-	- Pickup speed tripled (from 3 to 8 items/second)
-	- Range tripled (from 4 to 12)
-	- Repaired with thulecite fragments (refills 300 uses) (configurable)
+	- 1200 durability (from 225) (configurable)
+	- Pickup speed tripled (from 3 to 8 items/second) (configurable)
+	- Range tripled (from 4 to 12) (configurable)
+	- Repaired with thulecite fragments (refills 200 uses) (configurable)
 
 - Nightmare Amulet:
 	- Costs 1 less purple gem (from 2 to 1)
@@ -160,6 +160,18 @@ List of changes:
 	- Reduced claustrophobia radius to 1 (from 1.5)
 
 - Drying Rack:
+	- Reduced claustrophobia radius to 1
+
+- Winona Catapult:
+	- Reduced claustrophobia radius to 1
+
+- Winona Spotlight:
+	- Reduced claustrophobia radius to 1
+
+- Winona Generator Weak:
+	- Reduced claustrophobia radius to 1
+
+- Winona Gemerator:
 	- Reduced claustrophobia radius to 1
 
 # TURF

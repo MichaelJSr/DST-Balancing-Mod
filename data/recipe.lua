@@ -56,3 +56,7 @@ AddRecipe2("rabbithouse", {Ingredient("boards", 4), Ingredient("carrot", 10), In
 AddRecipe2("icebox", {Ingredient("goldnugget", 2), Ingredient("gears", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="icebox_placer", min_spacing=1})
 AddRecipe2("saltbox", {Ingredient("saltrock", 10), Ingredient("bluegem", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="saltbox_placer", min_spacing=1})
 AddRecipe2("meatrack",	{Ingredient("twigs", 3),Ingredient("charcoal", 2), Ingredient("rope", 3)}, TECH.SCIENCE_ONE, {placer="meatrack_placer", min_spacing=1})
+AddRecipe2("winona_catapult", {Ingredient("sewing_tape", 1), Ingredient("twigs", 3), Ingredient("rocks", 15)}, TECH.NONE, {builder_tag="handyperson", placer="winona_catapult_placer", min_spacing=1})
+AddRecipe2("winona_spotlight", {Ingredient("sewing_tape", 1), Ingredient("goldnugget", 2), Ingredient("fireflies", 1)}, TECH.NONE, {builder_tag="handyperson", placer="winona_spotlight_placer", min_spacing=1})
+AddRecipe2("winona_battery_low", {Ingredient("sewing_tape", 1), Ingredient("log", 2), Ingredient("nitre", 2)}, TECH.NONE, {builder_tag="handyperson", placer="winona_battery_low_placer", min_spacing=1})
+AddRecipe2("winona_battery_high", {Ingredient("sewing_tape", 1), Ingredient("boards", 2), Ingredient("transistor", 2)}, TECH.NONE, {builder_tag="handyperson", placer="winona_battery_high_placer", min_spacing=1})

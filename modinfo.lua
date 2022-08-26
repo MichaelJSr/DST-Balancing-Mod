@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.4.4"
+version = "3.2.4.6"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -706,9 +706,9 @@ configuration_options =
 			{description = "50", data = 50},
 			{description = "100", data = 100},
 			{description = "150", data = 150},
-			{description = "200", data = 200},
+			{description = "200", data = 200, hover = "Recommended Setting"},
 			{description = "250", data = 250},
-			{description = "300", data = 300, hover = "Recommended Setting"},
+			{description = "300", data = 300},
 			{description = "350", data = 350},
 			{description = "400", data = 400},
 			{description = "450", data = 450},
@@ -716,7 +716,7 @@ configuration_options =
 			{description = "550", data = 550},
 			{description = "600", data = 600},
 		},
-		default = 300,
+		default = 200,
 	},
 	{
 		name = "nightmarefill",

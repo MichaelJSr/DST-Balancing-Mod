@@ -75,14 +75,8 @@ TUNING.SHADOWWAXWELL_SANITY_PENALTY.SHADOWLUMBER = .15
 TUNING.SHADOWWAXWELL_SANITY_PENALTY.SHADOWMINER = .15
 TUNING.SHADOWWAXWELL_SANITY_PENALTY.SHADOWDIGGER = .15
 TUNING.SHADOWWAXWELL_SANITY_PENALTY.SHADOWDUELIST = .25
-TUNING.GAMEMODE_STARTING_ITEMS =
-{
-	DEFAULT =
-	{
-		WAXWELL = {"waxwelljournal", "armor_sanity",
-		"nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel"},
-	},
-}
+TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.WAXWELL = {"waxwelljournal", "armor_sanity", "nightmarefuel", "nightmarefuel",
+"nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel"}
 
 if TUNING.EXPERIMENTALCONFIG then
 	TUNING.WORTOX_SOULHEAL_RANGE = 16

@@ -106,7 +106,8 @@ end
 local function MoreEffectiveBuildItem(inst, data)
 	if data ~= nil then
 		if data.item.components.finiteuses ~= nil then
-			data.item.components.finiteuses:SetPercent(TUNING.WINONA_BONUS_DURABILITY)
+			data.item.components.finiteuses:SetMaxUses(data.item.components.finiteuses.total * TUNING.WINONA_BONUS_DURABILITY)
+			data.item.components.finiteuses:SetPercent(1)
 		end
 		if data.item.components.armor ~= nil then
 			data.item.components.armor:InitCondition(data.item.components.armor.maxcondition * TUNING.WINONA_BONUS_DURABILITY,
