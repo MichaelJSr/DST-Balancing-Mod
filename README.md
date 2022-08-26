@@ -116,11 +116,12 @@ List of changes:
 
 - Scaled Chest:
 	- 16 slots (from 12)
-	- 1 claustrophobia range (from 1.5)
+	- 1 claustrophobia radius (from 1.5)
 
 - Ornate Chest:
 	- 25 slots (from 9)
 	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 200 stingers
+	- 1.5 claustrophobia radius
 
 - Houndius Shootius:
 	- 24 health regeneration (from 12 to 24)
@@ -130,6 +131,36 @@ List of changes:
 - Tooth Trap:
 	- Costs 3 hounds teeth (from 1)
 	- 20 uses (from 10)
+
+- Meat Effify:
+	- Removed claustrophobia radius
+
+- Crock Pot:
+	- Reduced claustrophobia radius to 1
+
+- Bee Box:
+	- Reduced claustrophobia radius to 1
+
+- Ice Flingomatic:
+	- Removed claustrophobia radius
+
+- Lightning Rod:
+	- Reduced claustrophobia radius to 1
+
+- Pig House:
+	- Reduced claustrophobia radius to 2
+
+- Bunny House:
+	- Reduced claustrophobia radius to 2
+
+- Ice Box:
+	- Reduced claustrophobia radius to 1 (from 1.5)
+
+- Salt Box:
+	- Reduced claustrophobia radius to 1 (from 1.5)
+
+- Drying Rack:
+	- Reduced claustrophobia radius to 1
 
 # TURF
 - Scaled Flooring:

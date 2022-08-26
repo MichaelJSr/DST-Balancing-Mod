@@ -45,3 +45,14 @@ AddRecipe2("minotaurchest",
 	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4), Ingredient("stinger", 200)},
 	TECH.MAGIC_THREE,
 	{placer="minotaurchest_placer", min_spacing=1.5, atlas="images/inventoryimages.xml", image="minotaurchest.tex"})
+	
+AddRecipe2("resurrectionstatue", {Ingredient("boards", 4), Ingredient("beardhair", 4), Ingredient(CHARACTER_INGREDIENT.HEALTH, TUNING.EFFIGY_HEALTH_PENALTY)}, TECH.MAGIC_TWO,	{placer="resurrectionstatue_placer", min_spacing=0})
+AddRecipe2("cookpot", {Ingredient("cutstone", 3), Ingredient("charcoal", 6), Ingredient("twigs", 6)}, TECH.SCIENCE_ONE, {placer="cookpot_placer", min_spacing=1})
+AddRecipe2("beebox", {Ingredient("boards", 2),Ingredient("honeycomb", 1),Ingredient("bee", 4)}, TECH.SCIENCE_TWO, {placer="beebox_placer", min_spacing=1})
+AddRecipe2("firesuppressor", {Ingredient("gears", 2),Ingredient("ice", 15),Ingredient("transistor", 2)}, TECH.SCIENCE_TWO, {placer="firesuppressor_placer", min_spacing=0})
+AddRecipe2("lightning_rod", {Ingredient("goldnugget", 4), Ingredient("cutstone", 1)}, TECH.SCIENCE_ONE, {placer="lightning_rod_placer", min_spacing=1})
+AddRecipe2("pighouse", {Ingredient("boards", 4), Ingredient("cutstone", 3), Ingredient("pigskin", 4)}, TECH.SCIENCE_TWO, {placer="pighouse_placer", min_spacing=2})
+AddRecipe2("rabbithouse", {Ingredient("boards", 4), Ingredient("carrot", 10), Ingredient("manrabbit_tail", 4)}, TECH.SCIENCE_TWO, {placer="rabbithouse_placer", min_spacing=2})
+AddRecipe2("icebox", {Ingredient("goldnugget", 2), Ingredient("gears", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="icebox_placer", min_spacing=1})
+AddRecipe2("saltbox", {Ingredient("saltrock", 10), Ingredient("bluegem", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="saltbox_placer", min_spacing=1})
+AddRecipe2("meatrack",	{Ingredient("twigs", 3),Ingredient("charcoal", 2), Ingredient("rope", 3)}, TECH.SCIENCE_ONE, {placer="meatrack_placer", min_spacing=1})
