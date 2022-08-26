@@ -13,9 +13,8 @@ local function UpdateWaxwell(inst)
 			-- Allow Maxwell to summon up to 6 minions
 			inst.components.petleash:SetMaxPets(6)
 		end
-		
-		-- KU_Jm5uHm2b is my (the owner's) user id, I am testing something regarding userid here
-		if inst.components.sanity ~= nil and inst.userid == "KU_Jm5uHm2b" then
+
+		if inst.components.sanity ~= nil and TUNING.EXPERIMENTALCONFIG then
 			inst.components.sanity.dapperness = TUNING.DAPPERNESS_HUGE
 		end
 	end

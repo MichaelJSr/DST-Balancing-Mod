@@ -42,6 +42,6 @@ AddRecipe2("shadowduelist_builder", {Ingredient("nightmarefuel", 2), Ingredient(
 
 -- Claustrophobia and new
 AddRecipe2("minotaurchest",
-	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4), Ingredient("stinger", 400)},
+	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4), Ingredient("stinger", 200)},
 	TECH.MAGIC_THREE,
 	{placer="minotaurchest_placer", min_spacing=1.5, atlas="images/inventoryimages.xml", image="minotaurchest.tex"})

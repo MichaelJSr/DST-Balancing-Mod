@@ -22,8 +22,6 @@ List of changes:
 	- Can be configured to craft x amount while only using 1 feather
 	- Fire Dart:
 		- Deals 50 damage instead of 0
-	- Sleep Dart:
-		- Deals 50 damage instead of 0
 
 # BODY
 - Scalemail:
@@ -122,7 +120,7 @@ List of changes:
 
 - Ornate Chest:
 	- 25 slots (from 9)
-	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 400 stingers
+	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 200 stingers
 
 - Houndius Shootius:
 	- 24 health regeneration (from 12 to 24)

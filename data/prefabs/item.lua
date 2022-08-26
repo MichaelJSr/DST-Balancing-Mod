@@ -283,14 +283,3 @@ AddPrefabPostInit("blowdart_fire", function(inst)
 		inst.components.weapon:SetDamage(50)
 	end
 end)
-
--- SLEEP DART
-AddPrefabPostInit("blowdart_sleep", function(inst)
-	if not GLOBAL.TheWorld.ismastersim then
-		return inst
-	end
-
-	if inst.components.weapon ~= nil then
-		inst.components.weapon:SetDamage(50)
-	end
-end)
