@@ -200,3 +200,38 @@ pandora.OnCreate = function(inst, scenariorunner)
 
 	chestfunctions.AddChestItems(inst, items)
 end
+
+-- DOCKS
+AddPrefabPostInit("dock_kit", function(inst)
+	local _CanDeploy = inst._custom_candeploy_fn
+	inst._custom_candeploy_fn = function(inst, pt, mouseover, deployer, rotation)
+		if _CanDeploy ~= nil and _CanDeploy(inst, pt, mouseover, deployer, rotation) then
+			return true
+		end
+		
+	    local tile = GLOBAL.TheWorld.Map:GetTileAtPoint(pt.x, 0, pt.z)
+		if (tile == GLOBAL.WORLD_TILES.OCEAN_COASTAL_SHORE or tile == GLOBAL.WORLD_TILES.OCEAN_COASTAL
+		or tile == GLOBAL.WORLD_TILES.OCEAN_SWELL or tile == GLOBAL.WORLD_TILES.OCEAN_ROUGH
+		or tile == GLOBAL.WORLD_TILES.OCEAN_HAZARDOUS or tile == GLOBAL.WORLD_TILES.OCEAN_REEF) then
+			local tx, ty = GLOBAL.TheWorld.Map:GetTileCoordsAtPoint(pt.x, 0, pt.z)
+			local found_adjacent_safetile = false
+			for x_off = -1, 1, 1 do
+				for y_off = -1, 1, 1 do
+					if (x_off ~= 0 or y_off ~= 0) and GLOBAL.IsLandTile(GLOBAL.TheWorld.Map:GetTile(tx + x_off, ty + y_off)) then
+						found_adjacent_safetile = true
+						break
+					end
+				end
+
+				if found_adjacent_safetile then break end
+			end
+
+			if found_adjacent_safetile then
+				local center_pt = GLOBAL.Vector3(GLOBAL.TheWorld.Map:GetTileCenterPoint(tx, ty))
+				return found_adjacent_safetile and GLOBAL.TheWorld.Map:CanDeployDockAtPoint(center_pt, inst, mouseover)
+			end
+		end
+
+		return false
+	end
+end)

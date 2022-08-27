@@ -192,6 +192,9 @@ List of changes:
 	- +3.33 sanity per minute (from 0) (configurable)
 	- +20% heat resistance for structures placed on it (from 0%)
 
+- Docks:
+	- Can now be placed further out from shore than before (before there was a limit)
+
 # CHARACTER
 - Maxwell:
 	- Starts with night armor
@@ -226,6 +229,7 @@ List of changes:
 # MOBS
 - Rock Lobster:
 	- 1800 health (from 3000)
+	- Reduced absorption when shielding to 80% (from 95%)
 	- Drop 8 rocks, 8 flint, and 2 meat (from 2 rocks, 2 flint, and 1 meat)
 
 - Pet Lavae:

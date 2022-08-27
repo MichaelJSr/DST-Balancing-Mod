@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.4.6"
+version = "3.2.5.0"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -661,6 +661,27 @@ configuration_options =
 			{description = "10000", data = 10000},
 		},
 		default = 1800,
+	},
+	{
+		name = "rockyabsorption",
+		label = "Rock Lobster Absorption",
+		options = {
+			{description = "50%", data = 0.5},
+			{description = "55%", data = 0.55},
+			{description = "60%", data = 0.6},
+			{description = "65%", data = 0.65},
+			{description = "70%", data = 0.7},
+			{description = "75%", data = 0.75},
+			{description = "80%", data = 0.8, hover = "Recommended Setting"},
+			{description = "85%", data = 0.85},
+			{description = "88%", data = 0.88},
+			{description = "90%", data = 0.9},
+			{description = "92%", data = 0.92},
+			{description = "96%", data = 0.95, hover = "Vanilla Setting"},
+			{description = "98%", data = 0.98},
+			{description = "100%", data = 1},
+		},
+		default = 0.8,
 	},
 	------------------------------
 	--[[ Misc ]]

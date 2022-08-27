@@ -98,6 +98,7 @@ TUNING.WINONA_BONUS_DURABILITY = GetModConfigData("winonabonusdurability")
 TUNING.WINONA_HUNGER_DRAIN = GetModConfigData("winonahungerdrain")
 
 --Mobs
+TUNING.ROCKY_ABSORB = GetModConfigData("rockyabsorption")
 TUNING.ROCKY_HEALTH = GetModConfigData("rockyhealth")
 TUNING.LAVAE_HUNGER_RATE = 25/TUNING.TOTAL_DAY_TIME
 TUNING.LEIF_DAMAGE = 100
