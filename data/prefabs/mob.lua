@@ -112,8 +112,8 @@ local function UpdateBees(inst)
 	
 	if inst.components.lootdropper ~= nil then
 		inst.components.lootdropper:SetLoot(nil)
-		inst.components.lootdropper:AddChanceLoot("stinger", 0.25)
-		inst.components.lootdropper:AddChanceLoot("honey", 0.25)
+		inst.components.lootdropper:AddChanceLoot("stinger", TUNING.BEE_STINGER_DROPRATE)
+		inst.components.lootdropper:AddChanceLoot("honey", TUNING.BEE_HONEY_DROPRATE)
 	end
 end
 AddPrefabPostInit("bee", UpdateBees)

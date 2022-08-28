@@ -235,3 +235,43 @@ AddPrefabPostInit("dock_kit", function(inst)
 		return false
 	end
 end)
+
+-- POOP
+AddPrefabPostInit("poop", function(inst)
+	if not GLOBAL.TheWorld.ismastersim then
+		return inst
+	end
+	
+	if inst.components.fertilizer ~= nil then
+		local _onappliedfn = inst.components.fertilizer.onappliedfn
+		inst.components.fertilizer.onappliedfn = function(inst, final_use, doer, target)
+			if _onappliedfn ~= nil then
+				_onappliedfn(inst, final_use, doer, target)
+			end
+			
+			if target.components.pickable ~= nil then
+				target.components.pickable:ConsumeCycles(-target.components.pickable.max_cycles * 0.5)
+			end
+		end
+	end
+end)
+
+-- GUANO
+AddPrefabPostInit("guano", function(inst)
+	if not GLOBAL.TheWorld.ismastersim then
+		return inst
+	end
+	
+	if inst.components.fertilizer ~= nil then
+		local _onappliedfn = inst.components.fertilizer.onappliedfn
+		inst.components.fertilizer.onappliedfn = function(inst, final_use, doer, target)
+			if _onappliedfn ~= nil then
+				_onappliedfn(inst, final_use, doer, target)
+			end
+			
+			if target.components.pickable ~= nil then
+				target.components.pickable:ConsumeCycles(-target.components.pickable.max_cycles)
+			end
+		end
+	end
+end)

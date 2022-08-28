@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.5.0"
+version = "3.2.5.2"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -682,6 +682,58 @@ configuration_options =
 			{description = "100%", data = 1},
 		},
 		default = 0.8,
+	},
+	{
+		name = "beestingerdroprate",
+		label = "Bee Stinger Droprate",
+		options = {
+			{description = "0%", data = 0},
+			{description = "10%", data = 0.1},
+			{description = "20%", data = 0.2},
+			{description = "25%", data = 0.25, hover = "Recommended Setting"},
+			{description = "30%", data = 0.3},
+			{description = "40%", data = 0.4},
+			{description = "50%", data = 0.5},
+			{description = "55%", data = 0.55},
+			{description = "60%", data = 0.6},
+			{description = "65%", data = 0.65},
+			{description = "70%", data = 0.7},
+			{description = "75%", data = 0.75},
+			{description = "80%", data = 0.8},
+			{description = "83%", data = 0.83, hover = "Vanilla Setting"},
+			{description = "85%", data = 0.85},
+			{description = "88%", data = 0.88},
+			{description = "90%", data = 0.9},
+			{description = "95%", data = 0.95},
+			{description = "100%", data = 1},
+		},
+		default = 0.25,
+	},
+	{
+		name = "beehoneydroprate",
+		label = "Bee Honey Droprate",
+		options = {
+			{description = "0%", data = 0},
+			{description = "10%", data = 0.1},
+			{description = "16%", data = 0.16, hover = "Vanilla Setting"},
+			{description = "20%", data = 0.2},
+			{description = "25%", data = 0.25, hover = "Recommended Setting"},
+			{description = "30%", data = 0.3},
+			{description = "40%", data = 0.4},
+			{description = "50%", data = 0.5},
+			{description = "55%", data = 0.55},
+			{description = "60%", data = 0.6},
+			{description = "65%", data = 0.65},
+			{description = "70%", data = 0.7},
+			{description = "75%", data = 0.75},
+			{description = "80%", data = 0.8},
+			{description = "85%", data = 0.85},
+			{description = "88%", data = 0.88},
+			{description = "90%", data = 0.9},
+			{description = "95%", data = 0.95},
+			{description = "100%", data = 1},
+		},
+		default = 0.25,
 	},
 	------------------------------
 	--[[ Misc ]]

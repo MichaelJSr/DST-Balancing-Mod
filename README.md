@@ -253,8 +253,8 @@ List of changes:
 	- 40% drop chance for spiderhat (from 100%)
 
 - Bees (Killer And Normal):
-	- 25% stinger droprate (from 83.33%)
-	- 25% honey droprate (from 16.66%)
+	- 25% stinger droprate (from 83.33%) (configurable)
+	- 25% honey droprate (from 16.66%) (configurable)
 
 - Spitter:
 	- Drop 1 phlegm
@@ -275,6 +275,12 @@ List of changes:
 - Tillweed Salve:
 	- 30 healed over 1 minute (from 20)
 	- Costs 3 tillweed, 2 petals, and 1 charcoal (from 4 tillweed, 4 petals, and 1 charcoal)
+
+- Manure:
+	- When used to fertilize, refills 1.5x more picks than rot does
+
+- Guano:
+	- When used to fertilize, refills 2x more picks than rot does
 
 - War Saddle:
 	- 25 bonus damage (from 16)
