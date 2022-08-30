@@ -272,6 +272,9 @@ List of changes:
 	- Freeze attack does damage (5 piercing per blue gem slotted)
 
 # OTHER
+- Ruins Labyrinth Ornate Chests:
+	- Removed spears and log suits from loot table
+
 - Tillweed Salve:
 	- 30 healed over 1 minute (from 20)
 	- Costs 3 tillweed, 2 petals, and 1 charcoal (from 4 tillweed, 4 petals, and 1 charcoal)

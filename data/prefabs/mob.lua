@@ -29,14 +29,14 @@ AddComponentPostInit("deciduoustreeupdater", UpdatePoisonGuard)
 local function OnHungerDeltaLavaePet(inst, data)
 	if inst.components.heater ~= nil then
 		--Adjust heat and light put off.
-		inst.components.heater.heat = Lerp(15, 100, data.newpercent)
-		inst.Light:SetRadius(Lerp(.33, 1, data.newpercent))
-		inst.Light:SetIntensity(Lerp(.25, .75, data.newpercent))
+		inst.components.heater.heat = GLOBAL.Lerp(15, 100, data.newpercent)
+		inst.Light:SetRadius(GLOBAL.Lerp(.33, 1, data.newpercent))
+		inst.Light:SetIntensity(GLOBAL.Lerp(.25, .75, data.newpercent))
 	end
 	
 	-- Added a sanity aura that lerps based on hunger
 	if inst.components.hunger:GetPercent() <= 0.75 then
-		inst.components.sanityaura.aura = Lerp(-TUNING.SANITYAURA_LARGE, 0, data.newpercent)
+		inst.components.sanityaura.aura = GLOBAL.Lerp(-TUNING.SANITYAURA_LARGE, 0, data.newpercent)
 	else
 		inst.components.sanityaura.aura = 0
 	end
