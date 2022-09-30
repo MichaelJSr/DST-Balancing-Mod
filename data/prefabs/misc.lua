@@ -249,7 +249,7 @@ AddPrefabPostInit("poop", function(inst)
 				_onappliedfn(inst, final_use, doer, target)
 			end
 			
-			if target.components.pickable ~= nil then
+			if target ~= nil and target.components.pickable ~= nil then
 				target.components.pickable:ConsumeCycles(-target.components.pickable.max_cycles * 0.5)
 			end
 		end
@@ -269,7 +269,7 @@ AddPrefabPostInit("guano", function(inst)
 				_onappliedfn(inst, final_use, doer, target)
 			end
 			
-			if target.components.pickable ~= nil then
+			if target ~= nil and target.components.pickable ~= nil then
 				target.components.pickable:ConsumeCycles(-target.components.pickable.max_cycles)
 			end
 		end
