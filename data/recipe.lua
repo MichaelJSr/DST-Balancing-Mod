@@ -34,12 +34,6 @@ AddRecipe2("blowdart_fire", {Ingredient("cutreeds", 2), Ingredient("charcoal", G
 AddRecipe2("blowdart_yellow", {Ingredient("cutreeds", 2), Ingredient("goldnugget", GetModConfigData("DartAmount")), Ingredient("feather_canary", 1)}, TECH.SCIENCE_TWO, {numtogive=GetModConfigData("DartAmount")})
 AddRecipe2("blowdart_sleep", {Ingredient("cutreeds", 2), Ingredient("stinger", GetModConfigData("DartAmount")), Ingredient("feather_crow", 1)}, TECH.SCIENCE_TWO, {numtogive=GetModConfigData("DartAmount")})
 
--- Make the Shadow minions say 15% of sanity
-AddRecipe2("shadowlumber_builder",	{Ingredient("nightmarefuel", 2), Ingredient("axe", 1), Ingredient(CHARACTER_INGREDIENT.MAX_SANITY, 0.15)}, TECH.SHADOW_TWO, {builder_tag="shadowmagic", nounlock=true})
-AddRecipe2("shadowminer_builder", {Ingredient("nightmarefuel", 2), Ingredient("pickaxe", 1), Ingredient(CHARACTER_INGREDIENT.MAX_SANITY, 0.15)}, TECH.SHADOW_TWO, {builder_tag="shadowmagic", nounlock=true})
-AddRecipe2("shadowdigger_builder", {Ingredient("nightmarefuel", 2), Ingredient("shovel", 1), Ingredient(CHARACTER_INGREDIENT.MAX_SANITY, 0.15)}, TECH.SHADOW_TWO, {builder_tag="shadowmagic", nounlock=true})
-AddRecipe2("shadowduelist_builder", {Ingredient("nightmarefuel", 2), Ingredient("spear", 1), Ingredient(CHARACTER_INGREDIENT.MAX_SANITY, 0.25)}, TECH.SHADOW_TWO, {builder_tag="shadowmagic", nounlock=true})
-
 -- Claustrophobia and new
 AddRecipe2("minotaurchest",
 	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4), Ingredient("stinger", 200)},

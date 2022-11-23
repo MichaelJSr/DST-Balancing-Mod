@@ -1,26 +1,3 @@
--- WAXWELL
-local function UpdateWaxwell(inst)
-	if not GLOBAL.TheWorld.ismastersim then
-        return inst
-    end
-	
-	if inst.prefab == "waxwell" then
-		if inst.components.petleash ~= nil then
-			-- Allow Maxwell to summon up to 6 minions
-			inst.components.petleash:SetMaxPets(inst.components.petleash:GetMaxPets() + 6)
-		else
-			inst:AddComponent("petleash")
-			-- Allow Maxwell to summon up to 6 minions
-			inst.components.petleash:SetMaxPets(6)
-		end
-
-		if inst.components.sanity ~= nil and TUNING.EXPERIMENTALCONFIG then
-			inst.components.sanity.dapperness = TUNING.DAPPERNESS_HUGE
-		end
-	end
-end
-AddPlayerPostInit(UpdateWaxwell)
-
 -- WILLOW
 local function UpdateWillow(inst)
 	if not GLOBAL.TheWorld.ismastersim then

@@ -198,14 +198,6 @@ List of changes:
 # CHARACTER
 - Maxwell:
 	- Starts with night armor
-	- Workers:
-		- Cost 15% sanity (from 20%)
-	- Duelist:
-		- Cost 25% sanity (from 35%)
-		- 10 speed (from 6)
-		- 68 damage (from 40)
-		- 250 health (from 75)
-		- 1 second before healing (from 2)
 
 - Wortox:
 	- 3 heal reduction per player (from 1) (configurable)
