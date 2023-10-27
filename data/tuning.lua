@@ -34,6 +34,8 @@ TUNING.EYETURRET_REGEN = 24
 TUNING.SALTLICK_MAX_LICKS = 480
 TUNING.POTFERNSANITY = GetModConfigData("potfernsanity")
 TUNING.POTSUCCSANITY = GetModConfigData("potsuccsanity")
+TUNING.CHANGE_DRAGONFLY_CHEST = GetModConfigData("change_dragonfly_chest")
+TUNING.CHANGE_MINOTAUR_CHEST = GetModConfigData("change_minotaur_chest")
 
 --Hay Walls
 TUNING.REPAIR_STICK_HEALTH = GetModConfigData("HealthHayWalls")/3

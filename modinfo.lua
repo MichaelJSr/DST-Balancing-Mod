@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.5.7"
+version = "3.2.5.9"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -373,6 +373,24 @@ configuration_options =
 			{description = "+10 per minute", data = 10},
 		},
 		default = 3.33,
+	},
+	{
+		name = "change_dragonfly_chest",
+		label = "Change dragonfly chest size",
+		options = {
+			{description = "Don't change size", data = false, hover = "Vanilla Setting"},
+			{description = "Change size", data = true, hover = "Recommended Setting"},
+		},
+		default = false,
+	},
+	{
+		name = "change_minotaur_chest",
+		label = "Change minotaur chest size",
+		options = {
+			{description = "Don't change size", data = false, hover = "Vanilla Setting"},
+			{description = "Change size", data = true, hover = "Recommended Setting"},
+		},
+		default = false,
 	},
 	------------------------------
 	--[[ Characters ]]

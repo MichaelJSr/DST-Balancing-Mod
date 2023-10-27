@@ -239,31 +239,35 @@ AddPrefabPostInit("trunkvest_winter", function(inst) CreateContainer(inst, "vest
 AddPrefabPostInit("reflectivevest", function(inst) CreateContainer(inst, "vest") end)
 AddPrefabPostInit("armorsnurtleshell", function(inst) CreateContainer(inst, "vest") end)
 
-AddPrefabPostInit("dragonflychest", function(inst)
-	UpdateExistingContainer(inst, "dragonflychestNew")
+if TUNING.CHANGE_DRAGONFLY_CHEST then
+	AddPrefabPostInit("dragonflychest", function(inst)
+		UpdateExistingContainer(inst, "dragonflychestNew")
 
-	if not GLOBAL.TheWorld.ismastersim then
-		return inst
-	end
+		if not GLOBAL.TheWorld.ismastersim then
+			return inst
+		end
 
-	if inst.components.workable ~= nil then
-		inst.components.workable:SetWorkLeft(8)
-	end
-end)
+		if inst.components.workable ~= nil then
+			inst.components.workable:SetWorkLeft(8)
+		end
+	end)
+end
 
-AddPrefabPostInit("minotaurchest", function(inst)
-	UpdateExistingContainer(inst, "minotaurchestNew")
+if TUNING.CHANGE_MINOTAUR_CHEST then
+	AddPrefabPostInit("minotaurchest", function(inst)
+		UpdateExistingContainer(inst, "minotaurchestNew")
 
-	if not GLOBAL.TheWorld.ismastersim then
-		return inst
-	end
+		if not GLOBAL.TheWorld.ismastersim then
+			return inst
+		end
 
-	if inst.components.lootdropper == nil and inst.components.workable == nil then
-		inst:AddComponent("lootdropper")
-		inst:AddComponent("workable")
-		inst.components.workable:SetWorkAction(GLOBAL.ACTIONS.HAMMER)
-		inst.components.workable:SetWorkLeft(16)
-		inst.components.workable:SetOnFinishCallback(onhammered)
-		inst.components.workable:SetOnWorkCallback(onhit)
-	end
-end)
+		if inst.components.lootdropper == nil and inst.components.workable == nil then
+			inst:AddComponent("lootdropper")
+			inst:AddComponent("workable")
+			inst.components.workable:SetWorkAction(GLOBAL.ACTIONS.HAMMER)
+			inst.components.workable:SetWorkLeft(16)
+			inst.components.workable:SetOnFinishCallback(onhammered)
+			inst.components.workable:SetOnWorkCallback(onhit)
+		end
+	end)
+end
