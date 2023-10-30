@@ -62,7 +62,7 @@ AddPlayerPostInit(function(inst)
 		inst.components.sanity.custom_rate_fn = function(inst)
 			local ret = 0
 			if _crfn then
-				ret = _crfn(inst)
+				ret = _crfn(inst, 0)
 			end
 			local tile, data = inst:GetCurrentTileType()
 			if data ~= nil and TurfEdits[tile] ~= nil and TurfEdits[tile][4] ~= nil then
