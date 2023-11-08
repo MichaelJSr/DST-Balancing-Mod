@@ -18,6 +18,14 @@ TUNING.ORANGEAMULET_USES = GetModConfigData("orangeamuletdurability")
 TUNING.ORANGEAMULET_RANGE = GetModConfigData("orangeamuletrange")
 TUNING.ORANGEAMULET_ICD = GetModConfigData("orangeamuleticd")
 
+--Containers
+TUNING.DRAGONFLYCHESTCOLUMNS = GetModConfigData("dragonflychestcolumns")
+TUNING.DRAGONFLYCHESTROWS = GetModConfigData("dragonflychestrows")
+TUNING.MINOTAURCHESTCOLUMNS = GetModConfigData("minotaurchestcolumns")
+TUNING.MINOTAURCHESTROWS = GetModConfigData("minotaurchestrows")
+TUNING.SNURTLESHELLCOLUMNS = GetModConfigData("snurtleshellcolumns")
+TUNING.SNURTLESHELLROWS = GetModConfigData("snurtleshellrows")
+
 --Hat
 TUNING.ARMOR_BEEHAT_ABSORPTION = GetModConfigData("beehatabsorption")
 TUNING.SPIDERHAT_PERISHTIME = 8 * TUNING.SEG_TIME
@@ -34,8 +42,6 @@ TUNING.EYETURRET_REGEN = 24
 TUNING.SALTLICK_MAX_LICKS = 480
 TUNING.POTFERNSANITY = GetModConfigData("potfernsanity")
 TUNING.POTSUCCSANITY = GetModConfigData("potsuccsanity")
-TUNING.CHANGE_DRAGONFLY_CHEST = GetModConfigData("change_dragonfly_chest")
-TUNING.CHANGE_MINOTAUR_CHEST = GetModConfigData("change_minotaur_chest")
 
 --Hay Walls
 TUNING.REPAIR_STICK_HEALTH = GetModConfigData("HealthHayWalls")/3

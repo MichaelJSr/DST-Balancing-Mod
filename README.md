@@ -36,7 +36,7 @@ List of changes:
 
 - Snurtle Shell Armor:
 	- 1500 durability (from 735) (configurable)
-	- 4 inventory slots (from 0)
+	- 4 inventory slots (from 0) (configurable)
 
 - Summer Frest:
 	- Take less overheat damage (configurable)
@@ -115,11 +115,11 @@ List of changes:
 	- More durability (configurable)
 
 - Scaled Chest:
-	- 16 slots (from 12)
+	- 16 slots (from 12) (configurable)
 	- 1 claustrophobia radius (from 1.5)
 
 - Ornate Chest:
-	- 25 slots (from 9)
+	- 25 slots (from 9) (configurable)
 	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 200 stingers
 	- 1.5 claustrophobia radius
 

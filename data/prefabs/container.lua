@@ -1,5 +1,5 @@
 local containers = GLOBAL.require("containers")
-containers.MAXITEMSLOTS = 25
+containers.MAXITEMSLOTS = 100
 
 -- WIDGET: {COLUMNS, ROWS, NUMSLOTS, STACKS, ONSIDE, TYPE, OPENLIMIT, POS}
 local backpackSizes =
@@ -42,7 +42,7 @@ local function UpdateContainerSize(container, columns, rows, numSlots)
 
 	container.widget.bgatlas = "images/backpacks.xml"
 	container.widget.bgimage = columns.."x"..rows..".tex"
-	container.widget.pos = GLOBAL.Vector3(-8.8 * columns - 30 * ((columns - 1) % 2), -10 * rows, 0)
+	container.widget.pos = GLOBAL.Vector3(-10.5 * columns - IndentBy(columns) / 2, -10 * rows + IndentBy(rows) / 4, 0)
 end
 
 --Change size of Backpacks
@@ -233,15 +233,10 @@ local function onhit(inst, worker)
 end
 
 
-AddPrefabPostInit("raincoat", function(inst) CreateContainer(inst, "vest") end)
-AddPrefabPostInit("trunkvest_summer", function(inst) CreateContainer(inst, "vest") end)
-AddPrefabPostInit("trunkvest_winter", function(inst) CreateContainer(inst, "vest") end)
-AddPrefabPostInit("reflectivevest", function(inst) CreateContainer(inst, "vest") end)
-AddPrefabPostInit("armorsnurtleshell", function(inst) CreateContainer(inst, "vest") end)
-
-if TUNING.CHANGE_DRAGONFLY_CHEST then
+if TUNING.DRAGONFLYCHESTCOLUMNS > 0 and TUNING.DRAGONFLYCHESTROWS > 0 then
+	backpackSizes["dragonfly_sizes"] = {TUNING.DRAGONFLYCHESTCOLUMNS, TUNING.DRAGONFLYCHESTROWS, TUNING.DRAGONFLYCHESTCOLUMNS * TUNING.DRAGONFLYCHESTROWS, true, false, "chest", nil, GLOBAL.Vector3(0, 200, 0)}
 	AddPrefabPostInit("dragonflychest", function(inst)
-		UpdateExistingContainer(inst, "dragonflychestNew")
+		UpdateExistingContainer(inst, "dragonfly_sizes")
 
 		if not GLOBAL.TheWorld.ismastersim then
 			return inst
@@ -253,9 +248,10 @@ if TUNING.CHANGE_DRAGONFLY_CHEST then
 	end)
 end
 
-if TUNING.CHANGE_MINOTAUR_CHEST then
+if TUNING.MINOTAURCHESTCOLUMNS > 0 and TUNING.MINOTAURCHESTROWS > 0 then
+	backpackSizes["minotaur_sizes"] = {TUNING.MINOTAURCHESTCOLUMNS, TUNING.MINOTAURCHESTROWS, TUNING.MINOTAURCHESTCOLUMNS * TUNING.MINOTAURCHESTROWS, true, false, "chest", nil, GLOBAL.Vector3(0, 200, 0)}
 	AddPrefabPostInit("minotaurchest", function(inst)
-		UpdateExistingContainer(inst, "minotaurchestNew")
+		UpdateExistingContainer(inst, "minotaur_sizes")
 
 		if not GLOBAL.TheWorld.ismastersim then
 			return inst
@@ -271,3 +267,13 @@ if TUNING.CHANGE_MINOTAUR_CHEST then
 		end
 	end)
 end
+
+if TUNING.SNURTLESHELLCOLUMNS > 0 and TUNING.SNURTLESHELLROWS > 0 then
+	backpackSizes["snurtle_sizes"] = {TUNING.SNURTLESHELLCOLUMNS, TUNING.SNURTLESHELLROWS, TUNING.SNURTLESHELLCOLUMNS * TUNING.SNURTLESHELLROWS, true, true, "pack", 1, nil}
+	AddPrefabPostInit("armorsnurtleshell", function(inst) CreateContainer(inst, "snurtle_sizes") end)
+end
+
+AddPrefabPostInit("raincoat", function(inst) CreateContainer(inst, "vest") end)
+AddPrefabPostInit("trunkvest_summer", function(inst) CreateContainer(inst, "vest") end)
+AddPrefabPostInit("trunkvest_winter", function(inst) CreateContainer(inst, "vest") end)
+AddPrefabPostInit("reflectivevest", function(inst) CreateContainer(inst, "vest") end)
