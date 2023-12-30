@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.8.1"
+version = "3.2.8.2"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true

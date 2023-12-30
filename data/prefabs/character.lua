@@ -9,7 +9,10 @@ local function UpdateWillow(inst)
 		inst.components.combat.customdamagemultfn = function(inst, target, weapon, multiplier, mount)
 			local mult = 1
 			if _customdamagemultfn ~= nil then
-				mult = _customdamagemultfn(inst, target, weapon, multiplier, mount)
+				local check_mult = _customdamagemultfn(inst, target, weapon, multiplier, mount)
+				if check_mult ~= nil then
+					mult = check_mult
+				end
 			end
 			
 			if weapon ~= nil and (weapon:HasTag("lighter") or weapon:HasTag("rangedlighter")) then
