@@ -78,13 +78,13 @@ TUNING.CHECKEREDTURFSANITY = GetModConfigData("checkeredturfsanity")
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.WAXWELL = {"waxwelljournal", "armor_sanity", "nightmarefuel", "nightmarefuel",
 "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel"}
 
-/*
+--[[
 if TUNING.EXPERIMENTALCONFIG then
 	TUNING.WORTOX_SOULHEAL_RANGE = 16
 	TUNING.WORTOX_SOULSTEALER_RANGE = 16
 	TUNING.WORTOX_SOULEXTRACT_RANGE = 32
 end
-*/
+]]
 TUNING.WORTOX_MAX_SOULS = GetModConfigData("wortoxsouls")
 TUNING.WORTOX_SOULHEAL_LOSS_PER_PLAYER = GetModConfigData("wortoxheal")
 
