@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.8.2"
+version = "3.2.8.3"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -769,6 +769,30 @@ configuration_options =
 			{description = "10000", data = 10000},
 		},
 		default = 1800,
+	},
+	{
+		name = "dropperhealth",
+		label = "Depth Dweller Health",
+		options = {
+			{description = "50", data = 50},
+			{description = "100", data = 100},
+			{description = "150", data = 150},
+			{description = "200", data = 200},
+			{description = "250", data = 250},
+			{description = "300", data = 300},
+			{description = "400", data = 400, hover = "Vanilla Setting"},
+			{description = "500", data = 500},
+			{description = "600", data = 600},
+			{description = "800", data = 800},
+			{description = "1200", data = 1200},
+			{description = "1800", data = 1800},
+			{description = "2400", data = 2400},
+			{description = "3000", data = 3000},
+			{description = "3600", data = 3600},
+			{description = "4000", data = 4000},
+			{description = "5000", data = 5000},
+		},
+		default = 400,
 	},
 	{
 		name = "rockyabsorption",

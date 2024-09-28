@@ -78,11 +78,13 @@ TUNING.CHECKEREDTURFSANITY = GetModConfigData("checkeredturfsanity")
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.WAXWELL = {"waxwelljournal", "armor_sanity", "nightmarefuel", "nightmarefuel",
 "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel", "nightmarefuel"}
 
+/*
 if TUNING.EXPERIMENTALCONFIG then
 	TUNING.WORTOX_SOULHEAL_RANGE = 16
 	TUNING.WORTOX_SOULSTEALER_RANGE = 16
 	TUNING.WORTOX_SOULEXTRACT_RANGE = 32
 end
+*/
 TUNING.WORTOX_MAX_SOULS = GetModConfigData("wortoxsouls")
 TUNING.WORTOX_SOULHEAL_LOSS_PER_PLAYER = GetModConfigData("wortoxheal")
 
@@ -107,6 +109,7 @@ TUNING.DECID_MONSTER_ADDITIONAL_LOOT_CHANCE = 0.5
 TUNING.BEEFALO_DOMESTICATION_LOSE_DOMESTICATION = 0
 TUNING.BEE_STINGER_DROPRATE = GetModConfigData("beestingerdroprate")
 TUNING.BEE_HONEY_DROPRATE = GetModConfigData("beehoneydroprate")
+TUNING.SPIDER_DROPPER_HEALTH = GetModConfigData("dropperhealth")
 
 --Other
 TUNING.TILLWEEDSALVE_TICK_RATE = 2

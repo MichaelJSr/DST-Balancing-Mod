@@ -206,3 +206,12 @@ AddPrefabPostInit("crabking_feeze", function(inst)
 		end
 	end)
 end)
+
+-- DANGLING DEPTH DWELLER
+AddPrefabPostInit("spider_dropper", function(inst)
+	if not GLOBAL.TheWorld.ismastersim then
+		return inst
+    end
+
+	inst.components.health:SetMaxHealth(TUNING.SPIDER_DROPPER_HEALTH)
+end)

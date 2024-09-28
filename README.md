@@ -224,6 +224,9 @@ List of changes:
 	- Reduced absorption when shielding to 80% (from 95%)
 	- Drop 8 rocks, 8 flint, and 2 meat (from 2 rocks, 2 flint, and 1 meat)
 
+- Dangling Depth Dweller:
+	- Configurable health
+
 - Pet Lavae:
 	- Immortal unless it starves
 	- Starves over the course of 4 days (from 2)
