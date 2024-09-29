@@ -107,10 +107,6 @@ List of changes:
 - Siesta Lean-To:
 	- 1 hunger per second (from 0.33)
 
-- Salt Lick:
-	- Costs 4 salt (instead of 4 nitre)
-	- 480 durability (from 240)
-
 - Walls:
 	- More durability (configurable)
 
@@ -120,7 +116,7 @@ List of changes:
 
 - Ornate Chest:
 	- 25 slots (from 9) (configurable)
-	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks, 200 stingers
+	- New recipe: 4 thulecite, 4 living logs, 4 moonrocks
 	- 1.5 claustrophobia radius
 
 - Houndius Shootius:
@@ -131,48 +127,6 @@ List of changes:
 - Tooth Trap:
 	- Costs 3 hounds teeth (from 1)
 	- 20 uses (from 10)
-
-- Meat Effify:
-	- Removed claustrophobia radius
-
-- Crock Pot:
-	- Reduced claustrophobia radius to 1
-
-- Bee Box:
-	- Reduced claustrophobia radius to 1
-
-- Ice Flingomatic:
-	- Removed claustrophobia radius
-
-- Lightning Rod:
-	- Reduced claustrophobia radius to 1
-
-- Pig House:
-	- Reduced claustrophobia radius to 2
-
-- Bunny House:
-	- Reduced claustrophobia radius to 2
-
-- Ice Box:
-	- Reduced claustrophobia radius to 1 (from 1.5)
-
-- Salt Box:
-	- Reduced claustrophobia radius to 1 (from 1.5)
-
-- Drying Rack:
-	- Reduced claustrophobia radius to 1
-
-- Winona Catapult:
-	- Reduced claustrophobia radius to 1
-
-- Winona Spotlight:
-	- Reduced claustrophobia radius to 1
-
-- Winona Generator Weak:
-	- Reduced claustrophobia radius to 1
-
-- Winona Gemerator:
-	- Reduced claustrophobia radius to 1
 
 # TURF
 - Scaled Flooring:
@@ -262,10 +216,6 @@ List of changes:
 - Moonrock Pengull:
 	- Drop 0-2 monster meat and 0-6 ice (from 1 monster meat and 1 ice)
 
-- Crab King:
-	- Can't permenantly freeze (chain freeze) anymore
-	- Freeze attack does damage (5 piercing per blue gem slotted)
-
 # OTHER
 - Ruins Labyrinth Ornate Chests:
 	- Removed spears and log suits from loot table
@@ -282,9 +232,6 @@ List of changes:
 
 - War Saddle:
 	- 25 bonus damage (from 16)
-
-- Hounds Teeth:
-	- New recipe: 10 teeth -> 1 bone shard
 
 - Salt Crystals:
 	- 1.5x health when used on food (from 1x)

@@ -189,6 +189,7 @@ AddPrefabPostInit("mutated_penguin", function(inst)
 end)
 
 -- CRABKING
+--[[
 AddPrefabPostInit("crabking_feeze", function(inst)
 	if not GLOBAL.TheWorld.ismastersim then
 		return inst
@@ -206,6 +207,7 @@ AddPrefabPostInit("crabking_feeze", function(inst)
 		end
 	end)
 end)
+]]
 
 -- DANGLING DEPTH DWELLER
 AddPrefabPostInit("spider_dropper", function(inst)

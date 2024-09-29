@@ -21,12 +21,10 @@ AddRecipe2("icehat", {Ingredient("rope", 4), Ingredient("ice", 10)}, TECH.SCIENC
 
 AddRecipe2("brush",	{Ingredient("steelwool", 1), Ingredient("twigs", 2), Ingredient("goldnugget", 2)}, TECH.SCIENCE_TWO)
 
-AddRecipe2("saltlick",	{Ingredient("boards", 2), Ingredient("saltrock", 4)}, TECH.SCIENCE_TWO, {placer="saltlick_placer"})
-
 AddRecipe2("trap_teeth", {Ingredient("log", 1), Ingredient("rope", 1), Ingredient("houndstooth", 3)}, TECH.SCIENCE_TWO)
 
 -- Refine
-AddRecipe2("boneshard", {Ingredient("houndstooth", 10)}, TECH.SCIENCE_ONE)
+--AddRecipe2("boneshard", {Ingredient("houndstooth", 10)}, TECH.SCIENCE_ONE)
 
 -- Blowdarts
 AddRecipe2("blowdart_pipe",	{Ingredient("cutreeds", 2), Ingredient("houndstooth", GetModConfigData("DartAmount")), Ingredient("feather_robin_winter", 1)}, TECH.SCIENCE_TWO, {numtogive=GetModConfigData("DartAmount")})
@@ -36,10 +34,11 @@ AddRecipe2("blowdart_sleep", {Ingredient("cutreeds", 2), Ingredient("stinger", G
 
 -- Claustrophobia and new
 AddRecipe2("minotaurchest",
-	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4), Ingredient("stinger", 200)},
+	{Ingredient("thulecite", 4), Ingredient("livinglog", 4), Ingredient("moonrocknugget", 4)},
 	TECH.MAGIC_THREE,
 	{placer="minotaurchest_placer", min_spacing=1.5, atlas="images/inventoryimages.xml", image="minotaurchest.tex"})
-	
+
+--[[
 AddRecipe2("resurrectionstatue", {Ingredient("boards", 4), Ingredient("beardhair", 4), Ingredient(CHARACTER_INGREDIENT.HEALTH, TUNING.EFFIGY_HEALTH_PENALTY)}, TECH.MAGIC_TWO,	{placer="resurrectionstatue_placer", min_spacing=0})
 AddRecipe2("cookpot", {Ingredient("cutstone", 3), Ingredient("charcoal", 6), Ingredient("twigs", 6)}, TECH.SCIENCE_ONE, {placer="cookpot_placer", min_spacing=1})
 AddRecipe2("beebox", {Ingredient("boards", 2),Ingredient("honeycomb", 1),Ingredient("bee", 4)}, TECH.SCIENCE_TWO, {placer="beebox_placer", min_spacing=1})
@@ -50,7 +49,4 @@ AddRecipe2("rabbithouse", {Ingredient("boards", 4), Ingredient("carrot", 10), In
 AddRecipe2("icebox", {Ingredient("goldnugget", 2), Ingredient("gears", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="icebox_placer", min_spacing=1})
 AddRecipe2("saltbox", {Ingredient("saltrock", 10), Ingredient("bluegem", 1), Ingredient("cutstone", 1)}, TECH.SCIENCE_TWO, {placer="saltbox_placer", min_spacing=1})
 AddRecipe2("meatrack",	{Ingredient("twigs", 3),Ingredient("charcoal", 2), Ingredient("rope", 3)}, TECH.SCIENCE_ONE, {placer="meatrack_placer", min_spacing=1})
-AddRecipe2("winona_catapult", {Ingredient("sewing_tape", 1), Ingredient("twigs", 3), Ingredient("rocks", 15)}, TECH.NONE, {builder_tag="handyperson", placer="winona_catapult_placer", min_spacing=1})
-AddRecipe2("winona_spotlight", {Ingredient("sewing_tape", 1), Ingredient("goldnugget", 2), Ingredient("fireflies", 1)}, TECH.NONE, {builder_tag="handyperson", placer="winona_spotlight_placer", min_spacing=1})
-AddRecipe2("winona_battery_low", {Ingredient("sewing_tape", 1), Ingredient("log", 2), Ingredient("nitre", 2)}, TECH.NONE, {builder_tag="handyperson", placer="winona_battery_low_placer", min_spacing=1})
-AddRecipe2("winona_battery_high", {Ingredient("sewing_tape", 1), Ingredient("boards", 2), Ingredient("transistor", 2)}, TECH.NONE, {builder_tag="handyperson", placer="winona_battery_high_placer", min_spacing=1})
+]]
