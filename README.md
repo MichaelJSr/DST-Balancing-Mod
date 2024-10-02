@@ -23,6 +23,10 @@ List of changes:
 	- Fire Dart:
 		- Deals 50 damage instead of 0
 
+# ITEMS
+- Thermal Stone:
+	- Its insulation now stacks with other insulation items
+
 # BODY
 - Scalemail:
 	- 85% absorption (from 70%)

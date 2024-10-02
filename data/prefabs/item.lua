@@ -31,7 +31,9 @@ local function ModifyOverheatDamage(inst, factor)
 		local _OverheatHurtRate = TUNING.WILSON_HEALTH / TUNING.FREEZING_KILL_TIME
 		local _onequip = inst.components.equippable.onequipfn
 		inst.components.equippable:SetOnEquip(function(inst, owner)
-			_onequip(inst, owner)
+			if _onequip ~= nil then
+				_onequip(inst, owner)
+			end
 			if owner.components.temperature.overheathurtrate ~= nil then
 				_OverheatHurtRate = owner.components.temperature.overheathurtrate
 			end
@@ -40,7 +42,9 @@ local function ModifyOverheatDamage(inst, factor)
 
 		local _onunequip = inst.components.equippable.onunequipfn
 		inst.components.equippable:SetOnUnequip(function(inst, owner)
-			_onunequip(inst, owner)
+			if _onunequip ~= nil then
+				_onunequip(inst, owner)
+			end
 			if owner.components.temperature.overheathurtrate ~= nil then
 				_OverheatHurtRate = owner.components.temperature.overheathurtrate
 			end
@@ -96,13 +100,17 @@ local function SanityWhenHit(inst, rate)
 	if inst.components.equippable ~= nil then
 		local _onequip = inst.components.equippable.onequipfn
 		inst.components.equippable:SetOnEquip(function(inst, owner)
-			_onequip(inst, owner)
+			if _onequip ~= nil then
+				_onequip(inst, owner)
+			end
 			owner:ListenForEvent("healthdelta", SanityWhenHitHealthDelta)
 		end)
 
 		local _onunequip = inst.components.equippable.onunequipfn
 		inst.components.equippable:SetOnUnequip(function(inst, owner)
-			_onunequip(inst, owner)
+			if _onunequip ~= nil then
+				_onunequip(inst, owner)
+			end
 			owner:RemoveEventCallback("healthdelta", SanityWhenHitHealthDelta)
 		end)
 	end
@@ -283,3 +291,38 @@ AddPrefabPostInit("blowdart_fire", function(inst)
 		inst.components.weapon:SetDamage(50)
 	end
 end)
+
+-- THERMAL STONE
+local function ModifyOwnerInsulationOnPickup(inst, factor)
+	if not GLOBAL.TheWorld.ismastersim then
+		return inst
+	end
+
+	if inst.components.inventoryitem ~= nil and inst.components.temperature ~= nil then
+		local _onpickup = inst.components.inventoryitem.onpickupfn
+		inst.components.inventoryitem:SetOnPickupFn(function(inst, owner)
+			if _onpickup ~= nil then
+				_onpickup(inst, owner)
+			end
+			if owner.components.temperature ~= nil then
+				inst.components.temperature.old_owner = owner
+				inst.components.temperature.old_temp = inst.components.temperature.current
+				owner.components.temperature.inherentinsulation = math.max(owner.components.temperature.inherentinsulation + inst.components.temperature.current, 0)
+				owner.components.temperature.inherentsummerinsulation = math.max(owner.components.temperature.inherentsummerinsulation + math.max(60 - inst.components.temperature.current, 0), 0)
+			end
+		end)
+
+		local _ondrop = inst.components.inventoryitem.ondropfn
+		inst.components.inventoryitem:SetOnDroppedFn(function(inst)
+			if _ondrop ~= nil then
+				_ondrop(inst)
+			end
+			if inst.components.temperature.old_owner ~= nil then
+				inst.components.temperature.old_owner.components.temperature.inherentinsulation = math.max(inst.components.temperature.old_owner.components.temperature.inherentinsulation - inst.components.temperature.old_temp, 0)
+				inst.components.temperature.old_owner.components.temperature.inherentsummerinsulation = math.max(inst.components.temperature.old_owner.components.temperature.inherentsummerinsulation - math.max(60 - inst.components.temperature.old_temp, 0), 0)
+			end
+		end)
+	end
+end
+
+AddPrefabPostInit("heatrock", function(inst) ModifyOwnerInsulationOnPickup(inst, TUNING.INSULATION_MED) end)
