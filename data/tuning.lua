@@ -84,8 +84,8 @@ if TUNING.EXPERIMENTALCONFIG then
 	TUNING.WORTOX_SOULEXTRACT_RANGE = 32
 end
 ]]
-TUNING.WORTOX_MAX_SOULS = GetModConfigData("wortoxsouls")
-TUNING.WORTOX_SOULHEAL_LOSS_PER_PLAYER = GetModConfigData("wortoxheal")
+--TUNING.WORTOX_MAX_SOULS = GetModConfigData("wortoxsouls")
+--TUNING.WORTOX_SOULHEAL_LOSS_PER_PLAYER = GetModConfigData("wortoxheal")
 
 TUNING.WILLOW_DEBUFF_RATE = GetModConfigData("willowdebuffrate")
 TUNING.WILLOW_FIRE_MULT = GetModConfigData("willowfiremult")

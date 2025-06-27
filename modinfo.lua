@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.9.0"
+version = "3.2.9.1"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -491,6 +491,7 @@ configuration_options =
 		options = {{description = "", data = 0}},
 		default = 0,
 	},
+--[[
 	{
 		name = "wortoxheal",
 		label = "Wortox Soul Heal Loss Per Player",
@@ -537,6 +538,7 @@ configuration_options =
 		},
 		default = 30,
 	},
+]]
 	{
 		name = "willowdebuffrate",
 		label = "Willow Fire Debuff Rate",

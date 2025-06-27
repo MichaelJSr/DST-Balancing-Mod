@@ -157,9 +157,6 @@ List of changes:
 - Maxwell:
 	- Starts with night armor
 
-- Wortox:
-	- 3 heal reduction per player (from 1) (configurable)
-
 - Willow:
 	- 2x damage multiplier with fire-based weapons (from 1x) (configurable)
 	- Inflicts stacking debuff making enemies take more fire damage (configurable)
