@@ -150,6 +150,10 @@ List of changes:
 	- +3.33 sanity per minute (from 0) (configurable)
 	- +20% heat resistance for structures placed on it (from 0%)
 
+- Beard Hair Flooring:
+	- -6 sanity per minute (from 0) (configurable)
+	- 320 seconds of winter insulation (from 0) (configurable)
+
 - Docks:
 	- Can now be placed further out from shore than before (before there was a limit)
 
@@ -244,9 +248,6 @@ List of changes:
 - Water Balloon:
 	- Affects all mobs (used to not affect water resistant mobs)
 	- Aggros enemies
-
-- Stone Fruit Bush:
-	- Stone fruit takes double the time to grow (from 2 days to 4 days)
 
 - Thulecite Medallion:
 	- Costs 1 thulecite and 1 nightmare fuel (from 2 thulecite and 2 nightmare fuel)

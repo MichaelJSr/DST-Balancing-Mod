@@ -1,6 +1,6 @@
 name = "Balancing Overhaul"
 author = "Grodus"
-version = "3.2.9.1"
+version = "3.2.9.3"
 description = "Rebalances many general aspects of the game."
 dst_compatible = true
 all_clients_require_mod = true
@@ -1135,6 +1135,53 @@ configuration_options =
 			{description = "Not Resistant", data = false, hover = "Vanilla Setting"},
 		},
 		default = true,
+	},
+	{
+		name = "beardhairturfwinterinsulation",
+		label = "Beard Hair Flooring Winter Insulation",
+		options = {
+			{description = "0 Seconds", data = 0, hover = "Vanilla Setting"},
+			{description = "40 Seconds", data = 40},
+			{description = "80 Seconds", data = 80},
+			{description = "120 Seconds", data = 120},
+			{description = "160 Seconds", data = 160},
+			{description = "200 Seconds", data = 200},
+			{description = "240 Seconds", data = 240},
+			{description = "280 Seconds", data = 280},
+			{description = "320 Seconds", data = 320, hover = "Recommended Setting"},
+			{description = "360 Seconds", data = 360},
+			{description = "400 Seconds", data = 400},
+		},
+		default = 320,
+	},
+	{
+		name = "beardhairturfsanity",
+		label = "Beard Hair Flooring Sanity Aura",
+		options = {
+			{description = "-0 per minute", data = 0, hover = "Vanilla Setting"},
+			{description = "-0.33 per minute", data = -0.33},
+			{description = "-0.67 per minute", data = -0.67},
+			{description = "-1 per minute", data = -1},
+			{description = "-1.33 per minute", data = -1.33},
+			{description = "-1.67 per minute", data = -1.67},
+			{description = "-2 per minute", data = -2},
+			{description = "-2.33 per minute", data = -2.33},
+			{description = "-2.67 per minute", data = -2.67},
+			{description = "-3 per minute", data = -3},
+			{description = "-3.33 per minute", data = -3.33},
+			{description = "-3.67 per minute", data = -3.67},
+			{description = "-4 per minute", data = -4},
+			{description = "-5 per minute", data = -5},
+			{description = "-6 per minute", data = -6, hover = "Recommended Setting"},
+			{description = "-8 per minute", data = -8},
+			{description = "-10 per minute", data = -10},
+			{description = "-15 per minute", data = -15},
+			{description = "-20 per minute", data = -20},
+			{description = "-30 per minute", data = -30},
+			{description = "-40 per minute", data = -40},
+			{description = "-60 per minute", data = -60},
+		},
+		default = -6,
 	},
 	------------------------------
 	--[[ Walls ]]

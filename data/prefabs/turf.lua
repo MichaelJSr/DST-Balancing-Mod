@@ -10,6 +10,8 @@ local TurfEdits =
 	[12] = {nil, nil, nil, TUNING.CHECKEREDTURFSANITY/60, nil, 0.8},
 	-- SCALED
 	[32] = {TUNING.SCALEDTURFSPEED, TUNING.SCALEDTURFWINTERINSULATION, nil, nil, nil, nil, TUNING.SCALEDTURFSMOLDER, TUNING.SCALEDTURFWILDFIRE},
+	-- BEARD HAIR
+	[273] = {nil, TUNING.BEARDHAIRTURFWINTERINSULATION, nil, TUNING.BEARDHAIRTURFSANITY/60},
 }
 
 -- SCALE FLOORING
@@ -26,6 +28,7 @@ AddComponentPostInit("locomotor", function(self)
 		self.UpdateGroundSpeedMultiplier = function(self)
 			_UGSM(self)
 			local tile, data = self.inst:GetCurrentTileType()
+			--print("tile value ", tile)
 			if data == nil or TurfEdits[tile] == nil or TurfEdits[tile][1] == nil then
 				ResetSpeedMultiplier(self)
 				return

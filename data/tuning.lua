@@ -72,6 +72,8 @@ TUNING.WOODTURFSPEED = GetModConfigData("woodturfspeed")
 TUNING.CARPETTURFSANITY = GetModConfigData("carpetturfsanity")
 TUNING.CARPETTURFWATERPROOFNESS = GetModConfigData("carpetturfwaterproofness")
 TUNING.CHECKEREDTURFSANITY = GetModConfigData("checkeredturfsanity")
+TUNING.BEARDHAIRTURFWINTERINSULATION = GetModConfigData("beardhairturfwinterinsulation")
+TUNING.BEARDHAIRTURFSANITY = GetModConfigData("beardhairturfsanity")
 
 --Character
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.WAXWELL = {"waxwelljournal", "armor_sanity", "nightmarefuel", "nightmarefuel",
@@ -113,6 +115,7 @@ TUNING.SPIDER_DROPPER_HEALTH = GetModConfigData("dropperhealth")
 --Other
 TUNING.TILLWEEDSALVE_TICK_RATE = 2
 TUNING.SADDLE_WAR_BONUS_DAMAGE = 25
+--[[
 TUNING.ROCK_FRUIT_REGROW =
 {
 	EMPTY = { BASE = 4*TUNING.DAY_TIME_DEFAULT, VAR = 4*TUNING.SEG_TIME },
@@ -120,6 +123,7 @@ TUNING.ROCK_FRUIT_REGROW =
 	PICK = { BASE = 2*TUNING.DAY_TIME_DEFAULT, VAR = 8*TUNING.SEG_TIME },
 	CRUMBLE = { BASE = 2*TUNING.DAY_TIME_DEFAULT, VAR = 8*TUNING.SEG_TIME },
 }
+]]
 TUNING.SPICE_MULTIPLIERS =
 {
    SPICE_SALT = {
